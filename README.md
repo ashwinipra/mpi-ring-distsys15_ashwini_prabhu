@@ -38,7 +38,6 @@ Sending from processor ashwinipra, rank 4 out of 10 processors
 Count is: 100
 All processes finished in 0.147916 secs.
 Sending from processor ashwinipra, rank 0 out of 10 processors
-0 processor is out 
 ```
 
 
