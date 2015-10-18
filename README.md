@@ -21,22 +21,22 @@ $ mpirun -n 10 ./ring 100
 ```
 The output will be something like following,
 ```
-Message: 1
-Sending from processor ashwinipra, rank 1 out of 10 processors
+$ mpirun -n 10 ./hello 100
 
-Message: 2
-Sending from processor ashwinipra, rank 2 out of 10 processors
-
-Message: 3
-Sending from processor ashwinipra, rank 3 out of 10 processors
-
-Message: 4
-Sending from processor ashwinipra, rank 4 out of 10 processors
+Message: 10
+Message: 20
+Message: 30
+Message: 40
+Message: 50
+Message: 60
 .
 .
 .
-Count is: 100
-All processes finished in 0.147916 secs.
+Message: 980
+Message: 990
+Message: 1000
+Count is: 1000
+All processes finished in 0.195992 seconds.
 Sending from processor ashwinipra, rank 0 out of 10 processors
 ```
 
