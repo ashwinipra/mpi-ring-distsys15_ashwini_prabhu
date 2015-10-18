@@ -21,7 +21,7 @@ $ mpirun -n 10 ./ring 100
 ```
 The output will be something like following,
 ```
-$ mpirun -n 10 ./hello 100
+$ mpirun -n 10 ./ring 100
 
 Message: 10
 Message: 20

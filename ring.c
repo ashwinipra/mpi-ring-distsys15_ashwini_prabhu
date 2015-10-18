@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
                     {
                         endTime = MPI_Wtime() - startTime;
                         printf("\nCount is: %d",--num);
-                        printf("\nAll processes finished in %f secs.", endTime);
+                        printf("\nAll processes finished in %f seconds.\n", endTime);
                     }
                     else
                         MPI_Send((void*) &num, 1, MPI_INT, world_rank + 1, 1, MPI_COMM_WORLD);
@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
                 {
                     MPI_Status stat;
                     MPI_Recv((void*) &num, 1, MPI_INT, world_rank - 1, 1, MPI_COMM_WORLD, &stat);
-                    printf("\nMessage: %d",num);
+                    //printf("\nMessage: %d",num);
                     num ++;
                     MPI_Send((void*) &num, 1, MPI_INT, 0, 1, MPI_COMM_WORLD);
                     
@@ -59,16 +59,16 @@ int main(int argc, char** argv) {
                 {
                     MPI_Status stat;
                     MPI_Recv((void*) &num, 1, MPI_INT, world_rank - 1, 1, MPI_COMM_WORLD, &stat);
-                    printf("\nMessage: %d",num);
+                    //	printf("\nMessage: %d",num);
                     num ++;
                     MPI_Send((void*) &num, 1, MPI_INT, world_rank + 1, 1, MPI_COMM_WORLD);
                 }
                 
                 
                 // Print off a hello world message
-                printf("\nSending from processor %s, rank %d"
-                       " out of %d processors\n",
-                       processor_name, world_rank, world_size);   
+                //printf("\nSending from processor %s, rank %d"
+                //		" out of %d processors\n",
+                //		processor_name, world_rank, world_size);   
                 
                 // Finalize the MPI environment.
                 num1 ++;
