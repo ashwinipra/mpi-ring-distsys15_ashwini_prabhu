@@ -19,8 +19,8 @@ For example,
 ```
 $ mpirun -n 10 ./ring 100
 ```
-The output will be something like following
-
+The output will be something like following,
+```
 Message: 1
 Sending from processor ashwinipra, rank 1 out of 10 processors
 
@@ -39,7 +39,7 @@ Count is: 100
 All processes finished in 0.147916 secs.
 Sending from processor ashwinipra, rank 0 out of 10 processors
 0 processor is out 
-
+```
 
 
 
