@@ -13,7 +13,7 @@ To run,
 $ mpirun -n <number of processes> ./ring <count>
 ```
 where,
-number of processes: is the total number of process instances that we want tot run.
+number of processes: is the total number of process instances that we want to run.
 count: is the number of times the control should pass through all the processes.
 For example,
 ```
